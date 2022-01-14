@@ -18,8 +18,8 @@ const Withdrawals = require("./controllers/withdraw.js")
 router.post("/init", UserController.getUser);
 router.post("/wallets", WalletController.getWallet);
 router.get("/wallets", WalletController.readWallet);
-router.post("/deposit", DepositController.getDeposit);
-router.post("/withdrawals", Withdrawals.getWithdrawal);
+router.post("/wallets/deposit", DepositController.getDeposit);
+router.post("/wallets/withdrawals", Withdrawals.getWithdrawal);
 router.patch("/wallets", WalletController.updateWallet);
 
 router.listen(PORT, () => { console.log(`listening at http://localhost:${PORT}`) });

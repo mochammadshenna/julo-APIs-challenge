@@ -1,1 +1,1 @@
-# julo-APIs-challenge
+# mini-wallets-APIs-challenge
